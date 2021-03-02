@@ -1656,8 +1656,11 @@ function QuestieQuestFixes:Load()
         [6102] = {
             [questKeys.triggerEnd] = {"Tame a Strigid Screecher", {[zoneIDs.TELDRASSIL]={{43.81,50.88},},},},
         },
+        [6135] = {
+            [questKeys.preQuestGroup] = {6022,6042,6133},
+        },
         [6136] = {
-            [questKeys.preQuestSingle] = {6133}, -- #1572
+            [questKeys.preQuestGroup] = {6022,6042,6133},
         },
         [6141] = {
             [questKeys.exclusiveTo] = {261}, -- #1744

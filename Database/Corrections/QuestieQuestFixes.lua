@@ -175,10 +175,6 @@ function QuestieQuestFixes:Load()
         [435] = {
             [questKeys.triggerEnd] = {"Erland must reach Rane Yorick", {[zoneIDs.SILVERPINE_FOREST]={{54.37,13.38},},},},
         },
-        [436] = {
-            [questKeys.exclusiveTo] = {297}, -- #2492
-            [questKeys.nextQuestInChain] = {} -- #2492
-        },
         [437] = {
             [questKeys.triggerEnd] = {"Enter the Dead Fields",{[zoneIDs.SILVERPINE_FOREST]={{45.91, 21.27},},},},
         },
@@ -534,9 +530,6 @@ function QuestieQuestFixes:Load()
         [1119] = {
             [questKeys.inGroupWith] = {}, -- #886
             [questKeys.childQuests] = {1127}, -- #1084
-        },
-        [1123] = {
-            [questKeys.preQuestSingle] = {1000, 1004, 1018}
         },
         [1127] = {
             [questKeys.specialFlags] = 1, -- #884
@@ -1663,8 +1656,11 @@ function QuestieQuestFixes:Load()
         [6102] = {
             [questKeys.triggerEnd] = {"Tame a Strigid Screecher", {[zoneIDs.TELDRASSIL]={{43.81,50.88},},},},
         },
+        [6135] = {
+            [questKeys.preQuestGroup] = {6022,6042,6133}
+        },
         [6136] = {
-            [questKeys.preQuestSingle] = {6133}, -- #1572
+            [questKeys.preQuestGroup] = {6022,6042,6133}
         },
         [6141] = {
             [questKeys.exclusiveTo] = {261}, -- #1744
@@ -1773,9 +1769,6 @@ function QuestieQuestFixes:Load()
         [6722] = {
             [questKeys.startedBy] = {{1231},nil,nil},
             [questKeys.exclusiveTo] = {6071,6072,6073,6721,6063},
-        },
-        [6762] = {
-            [questKeys.preQuestSingle] = {1015,1019,1047,6761},
         },
         [6861] = {
             [questKeys.objectivesText] = {},
